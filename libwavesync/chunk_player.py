@@ -176,7 +176,7 @@ class ChunkPlayer:
                 continue
 
             mark, chunk = item
-            desired_time = mark - self.audio_config.sink_latency_ms
+            desired_time = mark - self.audio_config.sink_latency_s
 
             # 0) We got the next chunk to be played
             now = time_machine.now()
